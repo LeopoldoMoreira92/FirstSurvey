@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SurverForm</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <h1 id="title">My First SurveyForm</h1>
+    <p id="description">Hello, today is 5/26/2023, and this is my first survey form, i'm so happy =D.</p>
+
+  <div>
+    <!-- First Form Tag -->
+    <form id="survey-form" name="first-form">
+      <h1>Survey Form</h1>
+      <!-- Some Inputs -->
+      <label id="name-label" for="name">Name: <input placeholder="Your name here" id="name" type="text" required></label>
+      <label id="email-label" for="email">E-mail: <input placeholder="Email here" id="email" type="email" required></label>
+      <label id="number-label" for="number">Age: <input placeholder="Your age here" type="number" min="13" max="120" id="number"></label>
+    
+        <!-- Select With Dropdown -->
+        <label for="referrer">How you find us? 
+          <select id="dropdown">
+            <option class="select-option" value="">(select one)</option>
+            <option class="select-option" value="1">Google</option>
+            <option class="select-option" value="2">Facebook</option>
+          </select>
+        </label>
+        <!-- Text Area -->
+          <label for="about-you">Tell about you:<textarea id="about-you"></textarea></label>
+        
+
+        <fieldset>
+          Do you like this survey?
+            <div class="radio">
+              <label class="radio" id=""><input name="radio-option" type="radio" value="like-survey"></label> Yes
+              <label class="radio" id=""><input name="radio-option" type="radio" value="like-survey"></label> No
+            </div>
+        </fieldset>
+        
+
+        <fieldset>
+          <label>Text<input value="checkbox" type="checkbox"></label>
+          <label>Text<input value="checkbox" type="checkbox"></label>          
+        </fieldset>
+        <input id="submit" type="submit">
+      </form>
+  </div>
+  
+  </body>
+</html>
